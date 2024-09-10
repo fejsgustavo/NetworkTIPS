@@ -1,4 +1,4 @@
-<h1>Validações iniciais Switch CISCO</h1>
+### Validações iniciais Switch CISCO ###
 
 SW01> -> modo de execução sem privilégios.
 SW01# -> modo de configuração com privilégios.
