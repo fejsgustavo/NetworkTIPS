@@ -1,14 +1,8 @@
 <h1 align="center"> NetworkTIPS </h1>
 
-![GitHub repo size](https://img.shields.io/github/repo-size/iuricode/README-template?style=for-the-badge)
-![GitHub language count](https://img.shields.io/github/languages/count/iuricode/README-template?style=for-the-badge)
-![GitHub forks](https://img.shields.io/github/forks/iuricode/README-template?style=for-the-badge)
-![Bitbucket open issues](https://img.shields.io/bitbucket/issues/iuricode/README-template?style=for-the-badge)
-![Bitbucket open pull requests](https://img.shields.io/bitbucket/pr-raw/iuricode/README-template?style=for-the-badge)
+> Dicas de configuração de elementos de rede (Switch, Router, etc...).
 
 ![image](https://github.com/user-attachments/assets/3ab809d5-e899-4eef-bc6f-b7355cdec9f9)
-
-> Dicas de configuração de elementos de rede (Switch, Router, etc...).
 
 ### Ajustes e melhorias
 
