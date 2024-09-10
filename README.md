@@ -28,9 +28,7 @@ Antes de começar, verifique se você atendeu aos seguintes requisitos:
 
 Para usar NetWorkTIPS siga estas etapas:
 
-- Escolha o vendor e copie os comandos que precisa.
-
-Adicione comandos de execução e exemplos que você acha que os usuários acharão úteis. Forneça uma referência de opções para pontos de bônus!
+- Escolha o vendor, copie, estude, compare a sintaxe dos comandos.
 
 ## 📫 Contribuindo para NetworkTIPS
 
