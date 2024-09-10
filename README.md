@@ -24,17 +24,17 @@ Antes de começar, verifique se você atendeu aos seguintes requisitos:
 
 - Conhecimento basico de redes de computadores, protocolos de rede, conceito de VLANs.
 
-## ☕ Usando <NetworkTIPS>
+## ☕ Usando NetworkTIPS
 
-Para usar <NetWorkTIPS>, siga estas etapas:
+Para usar NetWorkTIPS siga estas etapas:
 
 - Escolha o vendor e copie os comandos que precisa.
 
 Adicione comandos de execução e exemplos que você acha que os usuários acharão úteis. Forneça uma referência de opções para pontos de bônus!
 
-## 📫 Contribuindo para <NetworkTIPS>
+## 📫 Contribuindo para NetworkTIPS
 
-Para contribuir com <NetworkTIPS>, siga estas etapas:
+Para contribuir com NetworkTIPS, siga estas etapas:
 
 1. Bifurque este repositório.
 2. Crie um branch: `git checkout -b <nome_branch>`.
