@@ -1,6 +1,7 @@
 <h1> NetworkTIPS </h1>
 
 > Dicas de configuração de elementos de rede (Switch, Router, etc...).
+> Serão disponibilizados arquivos .txt, onde pode baixar, copiar ou simplesmente usar como referência.
 
 ![image](https://github.com/user-attachments/assets/3ab809d5-e899-4eef-bc6f-b7355cdec9f9)
 
@@ -23,19 +24,17 @@ Antes de começar, verifique se você atendeu aos seguintes requisitos:
 
 - Conhecimento basico de redes de computadores, protocolos de rede, conceito de VLANs.
 
-## ☕ Usando <nome_do_projeto>
+## ☕ Usando <NetworkTIPS>
 
-Para usar <nome_do_projeto>, siga estas etapas:
+Para usar <NetWorkTIPS>, siga estas etapas:
 
-```
-<exemplo_de_uso>
-```
+- Escolha o vendor e copie os comandos que precisa.
 
 Adicione comandos de execução e exemplos que você acha que os usuários acharão úteis. Forneça uma referência de opções para pontos de bônus!
 
-## 📫 Contribuindo para <nome_do_projeto>
+## 📫 Contribuindo para <NetworkTIPS>
 
-Para contribuir com <nome_do_projeto>, siga estas etapas:
+Para contribuir com <NetworkTIPS>, siga estas etapas:
 
 1. Bifurque este repositório.
 2. Crie um branch: `git checkout -b <nome_branch>`.
@@ -49,34 +48,7 @@ Como alternativa, consulte a documentação do GitHub em [como criar uma solicit
 
 Agradecemos às seguintes pessoas que contribuíram para este projeto:
 
-<table>
-  <tr>
-    <td align="center">
-      <a href="#" title="defina o título do link">
-        <img src="https://avatars3.githubusercontent.com/u/31936044" width="100px;" alt="Foto do Iuri Silva no GitHub"/><br>
-        <sub>
-          <b>Iuri Silva</b>
-        </sub>
-      </a>
-    </td>
-    <td align="center">
-      <a href="#" title="defina o título do link">
-        <img src="https://s2.glbimg.com/FUcw2usZfSTL6yCCGj3L3v3SpJ8=/smart/e.glbimg.com/og/ed/f/original/2019/04/25/zuckerberg_podcast.jpg" width="100px;" alt="Foto do Mark Zuckerberg"/><br>
-        <sub>
-          <b>Mark Zuckerberg</b>
-        </sub>
-      </a>
-    </td>
-    <td align="center">
-      <a href="#" title="defina o título do link">
-        <img src="https://miro.medium.com/max/360/0*1SkS3mSorArvY9kS.jpg" width="100px;" alt="Foto do Steve Jobs"/><br>
-        <sub>
-          <b>Steve Jobs</b>
-        </sub>
-      </a>
-    </td>
-  </tr>
-</table>
+- Em Desenvolvimento
 
 ## 😄 Seja um dos contribuidores
 
