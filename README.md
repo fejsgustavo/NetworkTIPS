@@ -1,7 +1,7 @@
 <h1> NetworkTIPS </h1>
 
-> Dicas de configuração de elementos de rede (Switch, Router, etc...).
-> Serão disponibilizados arquivos .txt, onde pode baixar, copiar ou simplesmente usar como referência.
+- Dicas de configuração de elementos de rede (Switch, Router, etc...).
+- Serão disponibilizados arquivos .txt, onde pode baixar, copiar ou simplesmente usar como referência.
 
 ![image](https://github.com/user-attachments/assets/3ab809d5-e899-4eef-bc6f-b7355cdec9f9)
 
