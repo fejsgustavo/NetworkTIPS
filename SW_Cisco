@@ -1,0 +1,15 @@
+Validações iniciais Switch CISCO.
+
+	SW01> -> modo de execução sem privilégios.
+	SW01# -> modo de configuração com privilégios.
+	SW01(config)# -> modo de configuração global.
+	SW01(config-if)# -> modo de configuração da interface.
+	SW01# exit -> volta um nível.
+	SW01# end -> sai e volta para modo sem privilégios.
+	SW01# show version -> mostra informações, versão, etc.
+	SW01# show startup-config -> mostra a configuração salva na memória.
+	SW01# show running-config -> mostra a configuração atual.
+	SW01# write memory ou copy running-config startup-config -> salva a configuração atual para configuração da memoria.
+	SW01# write erase ou erase startup-config -> apaga a configuração da memória.
+	SW01# reload -> reinicia a caixa.
+	SW01# dir all -> mostra alocação de memória e nomes dos arquivos.
