@@ -1,4 +1,4 @@
-<h1 align="center"> NetworkTIPS </h1>
+<h1> NetworkTIPS </h1>
 
 > Dicas de configuração de elementos de rede (Switch, Router, etc...).
 
