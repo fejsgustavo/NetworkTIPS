@@ -1,0 +1,36 @@
+## Comandos Huawei ##
+
+Pagina suporte: -> https://support.huawei.com/enterprise/en/doc/EDOC1100088111
+
+#display device -> verifica mode do equipamento, modulos instalados, etc.
+#display version -> mostra a versão da caixa.
+#display reset-reason -> mostra os ultimos resets.
+#display logfile cfcard2:/log/log.log -> diretorio de log das alterações da caixa.
+#display logbuffer -> mostra ultimos logs de eventos.
+#display logbuffer slot [num_slot] -> verifica os alarmes para uma placa especifica.
+#display trapbuffer -> mostra ultimos traps na caixa.
+#display alarm all -> mostra todos os alarmes.
+#display alarm active -> mostra os alarmes ativos.
+#display alarm history -> mostra o historico dos alarmes.
+#display alarm hardware -> mostra os alarmes do hardware.
+#display diagnostic-information ->
+#display health -> mostra a "saude" da caixa.
+#display cpu-usage slot [num_slot] -> 
+#display cpu-defend all statistics slot [num_slot] ->
+#display attack-source-trace slot [num_slot] -> verifica o status de um possivel ataque para a caixa.
+#display arp interface eth-trunk [interface] -> mostra os MACs aprendidos no router para uma determinada VLan.
+#display current-configuration -> mostra configuração da caixa
+#display current-configuration interface GigabitEthernet [id-interface] -> mostra configuração de uma interface especifica.
+#display current-configuration interface Eth-Trunk [id-interface] "ex: 2.479" -> mostra configuração
+#display bgp peer [ip-address] verbose -> verifica o status da sessão BGP.
+#display bgp ipv6 peer -> mostra todas as sessões BGP IPv6.
+#display mpls route-state verbose | include [IP] -> 
+#display mpls ldp peer [IP] -> 
+#display interface-statistics [num_int] -> faz testes durante 10 seg na interface.
+#display interface phy-option GigabitEthernet [interface] -> mostra status do link físico de uma determinada interface.
+#reset counters interface [num_int] -> reseta os contadores de uma interface.
+#ping -vpn-instance [NUM_VPN ex: vpn00355]  [NUM_IP] -> faz o testes de ping para uma vpn especifica.
+#display ip routing-table [NUM_IP] -> verifica tabela de rota de um determinado IP externo.
+#display ip routing-table vpn-instance [NUM_VPN ex: vpn00356] [NUM_IP_CLIENTE] -> mostra a tabela de rota para cliente VPN L3
+#display ip interface brief | include [num_vlan] -> mostra os IPs configurados para vlan e respectiva interface
+#display access-user accounting-state accounting | include [num_contrato]
