@@ -1,0 +1,127 @@
+## Bizus Linux ##
+
+----
+* Comandos - Administração *
+	
+	-> #lsb_release -a -> lista a informação do sistema linux instalado.
+	-> #iostat -> monitoração do sistema.
+	-> #iostat -dhx 5 -> mostra os niveis de entrada e saída a cada 5 seg.
+	-> #top -> consumo de CPU, RAM e Swap do sistema. Além de verificar os processos ativos em tempo real.
+	-> #htop -> mesmo que o top, contudo apresenta design diferente.
+	-> #free -> mostra consumo memória RAM e SWAP.
+	-> #free -th -> mostra consumo memória RAM e SWAP com leitura para "humanos".
+	-> #history -> apresenta o histórico de comandos utilizado pelo usuário, ultimos 1000.
+	-> #history | tail -f -> apresenta ultimos 10 comandos.
+	-> #df -> verificar informações das partições do disco, como tamanho total, utilizado e livre.
+	-> #df -h -> verificar partições no formato Megabyte(M), Gigabyte, etc.
+	-> #df -i -> verificar numeros de inodes (alocação) das partições.
+	-> #du -> verifica o tamanho de uma pasta.
+	-> #du -sh -> tamanho dos arquivos de uma pasta.
+	-> #du -h pasta_destino -> verificar tamanho de uma pasta específica.
+	-> #du -h –-max-depth=1 pasta_destino -> verificar tamanho de uma pasta específica e suas sub-pastas.
+	-> #ls -> lista os arquivos de uma pasta.
+	-> #ls -l -> lista detalha.
+	-> #ls -lh -> lista detalha e em formato de Gigabyte, Megabyte, etc.
+	-> #ls -lht -> lista detalha, com ordem decrescente de data de criação e em formato de Gigabyte, Megabyte, etc.
+	-> #ls -la -> lista detalha, incluindo arquivos ocultos.
+	-> #ps -ef -> mostra todos os processos em execução.
+	-> #ping -l [interface] [host] -> executa o teste de ping atraves de uma interface específica.
+	-> #ifconfig -> mastra configuração interfaces eth.
+	-> #traceroute [host] -> testa soltos da rota até o host.
+	-> #netstat -atunp -> conexões abertas, portas, protocolo, etc.
+
+----
+* Comandos - VIM * 
+-> Bizus:
+	-> $ echo 'set number' >> ~/.vimrc > irá enumerar o texto.
+
+vim "arquivo Ex: .ssh/know_hosts" -> OBS: comando VIM ou VI pode ser utilizado para acessar qualquer arquivo de texto.
+	
+-> após acessar:
+	-> #:[linha] > localiza uma linha específica, não funciona teclado numerico.
+	-> #dd > apaga a linha desejada.
+	-> #:wq! > salva e sai do arquivo.
+	-> #:q! > sai do arquivo sem salvar.
+	-> #:w > apenas salva o arquivo.
+	-> #L > ir para o final da tela.
+	-> #G > Ir para o final do arquivo.
+	
+
+----
+* DNS * 
+
+	-> #host -t SOA dominio.com.br > utilizado para consultas testes de DNS.
+	-> #whois dominio.com.br > quem é o responsável pelo domínio e se ele está ativo.
+	-> #dig dominio.com.br > consulta no nome informado.
+	-> #dig dominio.com.br @8.8.8.8 > consulta deve usar o DNS 8.8.8.8.
+	-> #nslookup dominio.com.br > consulta nome de um dominio.
+	-> #nslookup dominio.com.br ip_dns_server > consulta o dominio perguntando ao servidor de DNS.
+	
+	** Tipos de entradas **
+		
+		-> A (Address) > fornece um ip para um nome de dominio.
+		-> AAAA (Quad A) > tradução de IPv6 para o nome.
+		-> CNAME (Canonical Name) > pseudônimo para os nomes de domínio que compartilham um único endereço IP. Todos os registros CNAME devem apontar para um domínio, nunca para um endereço de IP.
+		-> MX (Mail Exchange) > tradução de endereços utilizado em serviços de e-mail.
+		-> PTR (Pointer) > fornece o nome de domínio associado a um endereço de IP. 
+		-> NS (Name Server) > trata-se do servidor que armazena os registros de DNS de um domínio, incluindo os registros A, os registros MX ou os registros CNAME.
+		-> SOA (Start of Authority) > armazena informações importantes sobre um domínio ou sobre uma zona.
+		-> TXT (Texto) > atualmente, dois dos usos mais importantes para os registros DNS TXT são a prevenção contra spams de e-mail e a verificação de propriedade de domínio.
+	
+----
+* Restart/Reload e Status de serviços *
+
+	-> #/etc/init.d/named restart > reiniciar o serviço de DNS.
+	-> #/etc/init.d/named reload domínio.com.br > recarregar apenas o domínio informado.
+	-> #/etc/init.d/named reload > recarregar todos os domínios configurados.
+	-> #/etc/init.d/sshd restart > reiniciar o serviço de SSH.
+	-> #/etc/init.d/mysqld restart > reiniciar o serviço banco de dados MySQL.
+	-> #/etc/init.d/httpd restart > reiniciar o serviço de HTTP.
+	-> #/etc/init.d/apache restart > reiniciar o serviço de Apache.
+
+----
+* Comandos – reboot/shutdown *
+
+	-> #halt > para a máquina.
+	-> #halt -p > executa um poweroff / desliga a maquina.
+	-> #halt --reboot > reinicia a máquina.
+	-> #shutdown now > desliga a maquina.
+	-> #shutdown 13:20 > desejada a maquina na hora informada.
+	-> #shutdown -p now > faz um poweroff.
+	-> #shutdown -H now > executa o halt.
+	-> #shutdown -r09:35 > reinicia a máquina no horário especificado, no caso, 09:35am.
+	-> #shutdown -c > cancela um agendamento.
+	-> #reboot > reinicia a máquina.
+	-> #reboot --halt > executa um halt.
+	-> #reboot -p > executa um poweroff.
+	
+----
+----
+----
+
+* Varredura de portas / nmap *
+	-> #nmap -sP [num_ip/CIRD] > varre os IPs de uma rede.
+	-> #nmap -sS [ALVO] > varre as portas TCP SYN e seus estados (open, closed, filtered).
+	-> #nmap -sT [ALVO] > estabelece uma conexão e verifica portas abertas.
+	-> #nmap -sU [ALVO] > varre as portas UDP.
+	-> #nmap -sV [ALVO] > varre e tenta determinar as verões de serviços em exec nas portar abertas.
+	-> #nmap -A [ALVO] > detecta versão do SO, versão de serviços, etc.
+	-> #nmap -O [ALVO] > tenta identificar o SO em execução.
+	-> #nmap -F [ALVO] > analisa apenas as 100 portas mais comum.
+	-> #nmap -p- [ALVO] > varre todas 65535 portas TCP.
+	-> #nmap -v [AlVO] > Ativa o modo verbose, exibindo informações detalhadas durante a varredura.
+
+* Porta TCP/UDP *
+20/TCP > FTP (File Transfer Protocol - Protocolo de transferência de arquivo).
+21/TCP > FTP (File Transfer Protocol - Protocolo de transferência de arquivo).
+22/TCP,UDP > SSH (Secure Shell - Shell seguro) - Usada para logins seguros, transferência de arquivos e redirecionamento de porta.
+23/TCP,UDP > Telnet protocol - Comunicação de texto sem encriptação.
+25/TCP,UDP > SMTP (Simple Mail Transfer Protocol - Protocolo simples de envio de e-mail) - usada para roteamento de e-mail entre servidores (Atualmente é utilizada a porta 587).
+43/TCP > WHOIS (protocolo de consulta de informações de contato e DNSprotocol).
+53/TCP,UDP > DNS (Domain Name System - Sistema de nome de domínio).
+57/TCP > MTP, Mail Transfer Protocol (Protocolo de transferência de e-mail).
+67/UDP > BOOTP (BootStrap Protocol) server; também utilizada por DHCP (Protocolo de configuração dinâmica do Host).
+68/UDP > BOOTP client; também utilizada por DHCP.
+69/UDP > TFTP(Trivial File Transfer Protocol) (Protocolo de transferência de arquivo trivial).
+123/UDP > NTP (Network Time Protocol) (Protocolo de tempo na rede) - usada para sincronização de horário.
+161/TCP,UDP > SNMP (Simple Network Management Protocol) (Protocolo simples de gerenciamento de rede).
