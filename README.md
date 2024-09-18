@@ -26,7 +26,7 @@ Antes de começar, verifique se você atendeu aos seguintes requisitos:
 
 Para usar NetWorkTIPS siga estas etapas:
 
-- Escolha o vendor, copie, estude, compare a sintaxe dos comandos.
+- Escolha um vendor que um DOC esteja disponivel, leia, estude, compare, copie e aplique a sintaxe dos comandos.
 
 ## 📫 Contribuindo para NetworkTIPS
 
